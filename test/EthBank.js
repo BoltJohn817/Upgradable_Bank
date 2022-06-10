@@ -14,6 +14,11 @@ describe("EthBank", function() {
     await deployedEthBank.deployed();
   })
 
+  it("Can't register twice", async function () {
+    deployedEthBank.register();
+    await expect(deployedEthBank.register()).to.be.revertedWith("You have already registered");
+  });
+
   it("Can't deposit ETH before registration", async function () {
     await expect(deployedEthBank.deposit(ethers.utils.parseEther("1"), {value: ethers.utils.parseEther("1")})).to.be.revertedWith("Please register first");
   });

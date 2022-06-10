@@ -161,6 +161,89 @@
           }
         }
       }
+    },
+    "1489243691b5644fe2e290161a0347a13945a13e9176fe951d050dec11950d46": {
+      "address": "0xA70684cb56CF2bBeeb935B727211Ef1bF49f5e08",
+      "txHash": "0x2916ed3d013cc42997f9a5f2c83489664c15c91934fde698ed1c11ffeb5f5aa3",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "EthBankV3",
+            "src": "contracts/EthBankV3.sol:8"
+          },
+          {
+            "label": "_registered",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "EthBankV3",
+            "src": "contracts/EthBankV3.sol:9"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EthBankV3",
+            "src": "contracts/EthBankV3.sol:10"
+          },
+          {
+            "label": "_newOwner",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_address",
+            "contract": "EthBankV3",
+            "src": "contracts/EthBankV3.sol:11"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
     }
   }
 }

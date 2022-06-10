@@ -2,7 +2,7 @@
   "manifestVersion": "3.2",
   "admin": {
     "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
-    "txHash": "0x65cb7de63e5647cf9d4f63d5657baf5ffe567507dc0d5291695b24ac2e20d2ec"
+    "txHash": "0xdcdfaaf3d7d841f7342f2d1e45e161b4138ed249ae3b20d9ba18480236b0e3d6"
   },
   "proxies": [
     {
@@ -11,25 +11,148 @@
       "kind": "transparent"
     },
     {
-      "address": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
-      "txHash": "0xed4726da4468818b1af9e6eb974a6cf5474a9a2b05fb8987600cdab618ba6968",
-      "kind": "transparent"
-    },
-    {
       "address": "0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e",
       "txHash": "0xc422b314c8dd014aac6c0f326bb2fe5c52ae80c94a63c41522f69e40b1cc27f5",
       "kind": "transparent"
     },
     {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0xa5b9a705b152122907ad4fc0a5f519e26df8316f5e4f820723910b8f62e1721e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318",
+      "txHash": "0x029c1a6da91f28993d5f8edad7ff143cf1e3eb32bb51844ad25d289471822d42",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0",
+      "txHash": "0x55f9b5ad1ffb3aeb8c4d39a31dc0de679576362e487bbc4e0e4ef3e8ad78a588",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+      "txHash": "0xcf127bfa0683477bc931a9cebc7cede33542c9f4d551c8796804b859307e4522",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+      "txHash": "0xd965d99bf7b99bd23a1e88ce03fbd3f7269f7a6fca9ea175c1ce9231d6187055",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x610178dA211FEF7D417bC0e6FeD39F05609AD788",
+      "txHash": "0xae9e861f56e15c438bc342362db682d62d4ef3efbb09f03be9382780a1bf7fe3",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9A676e781A523b5d0C0e43731313A708CB607508",
+      "txHash": "0xf04492862726434809bca9a1c4f1d81e21958d10f358b1888b05b6f0522f5ec2",
+      "kind": "transparent"
+    },
+    {
       "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
-      "txHash": "0x21a7e528be650e6962f6dba864740e415cf858e881e8e9c57c6c8dcc44282bd8",
+      "txHash": "0x5f51f18d99c42a6e9554cc3febde7dc0cd527f45f78c0634070259315f5b66ac",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
+      "txHash": "0xb4415231bd9c5e85fc004d7a6cd1e211014406a69dbbbfb7fff3bf9685729bca",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x959922bE3CAee4b8Cd9a407cc3ac1C251C2007B1",
+      "txHash": "0x4a553726c12570f515e992ac76176c07ea1479d303fcaedaec58f7e2b806ef9e",
       "kind": "transparent"
     }
   ],
   "impls": {
-    "a15ecb5d669d256fb7c750082c45d98327fc5b25b5bf69d878c963aefbca5f1c": {
+    "1489243691b5644fe2e290161a0347a13945a13e9176fe951d050dec11950d46": {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0x185bb30db1bdee3b9b9cdbf6740208892ef2d6fcab6edc1012a4e3b24ac90224",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "EthBankV3",
+            "src": "contracts/EthBankV3.sol:8"
+          },
+          {
+            "label": "_registered",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "EthBankV3",
+            "src": "contracts/EthBankV3.sol:9"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EthBankV3",
+            "src": "contracts/EthBankV3.sol:10"
+          },
+          {
+            "label": "_newOwner",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_address",
+            "contract": "EthBankV3",
+            "src": "contracts/EthBankV3.sol:11"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "758930965ca404d862e7e355a6600b1d931e63827debf802b17c5aa9c598aa18": {
       "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-      "txHash": "0x9f0fe37ebc4372db863930766091c20a47d25a7bbbac3c0ef648703ba389f37a",
+      "txHash": "0xe501f95987cc152e7875f5b1e14f1d4089224e3530ec080fe08b6e330fe99661",
       "layout": {
         "storage": [
           {
@@ -72,81 +195,6 @@
             "type": "t_address",
             "contract": "EthBank",
             "src": "contracts/EthBank.sol:10"
-          }
-        ],
-        "types": {
-          "t_address": {
-            "label": "address",
-            "numberOfBytes": "20"
-          },
-          "t_bool": {
-            "label": "bool",
-            "numberOfBytes": "1"
-          },
-          "t_mapping(t_address,t_bool)": {
-            "label": "mapping(address => bool)",
-            "numberOfBytes": "32"
-          },
-          "t_mapping(t_address,t_uint256)": {
-            "label": "mapping(address => uint256)",
-            "numberOfBytes": "32"
-          },
-          "t_uint256": {
-            "label": "uint256",
-            "numberOfBytes": "32"
-          },
-          "t_uint8": {
-            "label": "uint8",
-            "numberOfBytes": "1"
-          }
-        }
-      }
-    },
-    "ddc4814089293efddd84fb61e168bc67eb18a722bdff3bb81a693de9f5a49c46": {
-      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
-      "txHash": "0x885f44ed145612e8cc1d9f778d4b7381135e7c3ef3b87990d590e081904841d0",
-      "layout": {
-        "storage": [
-          {
-            "label": "_initialized",
-            "offset": 0,
-            "slot": "0",
-            "type": "t_uint8",
-            "contract": "Initializable",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
-            "retypedFrom": "bool"
-          },
-          {
-            "label": "_initializing",
-            "offset": 1,
-            "slot": "0",
-            "type": "t_bool",
-            "contract": "Initializable",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
-          },
-          {
-            "label": "_balances",
-            "offset": 0,
-            "slot": "1",
-            "type": "t_mapping(t_address,t_uint256)",
-            "contract": "EthBankV2",
-            "src": "contracts/EthBankV2.sol:7"
-          },
-          {
-            "label": "_registered",
-            "offset": 0,
-            "slot": "2",
-            "type": "t_mapping(t_address,t_bool)",
-            "contract": "EthBankV2",
-            "src": "contracts/EthBankV2.sol:8"
-          },
-          {
-            "label": "_owner",
-            "offset": 0,
-            "slot": "3",
-            "type": "t_address",
-            "contract": "EthBankV2",
-            "src": "contracts/EthBankV2.sol:9"
           }
         ],
         "types": {
