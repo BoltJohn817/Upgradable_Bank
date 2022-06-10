@@ -1,0 +1,91 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x3e86ca3bb0fD2a6067887E32CC16a73991Bc6C04",
+    "txHash": "0xe78f3d1c1bdd7252fbe436cf9554160f901c3acec79ef25d2bfa9253337bd5e3"
+  },
+  "proxies": [
+    {
+      "address": "0xd79b45022443742AFbfce5d6Afc96845EB0C0F0b",
+      "txHash": "0xc478aaa66b3b71cf71c4c029f02bd87ebfdc7608e66d81db0be5162a988fd5a7",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "a15ecb5d669d256fb7c750082c45d98327fc5b25b5bf69d878c963aefbca5f1c": {
+      "address": "0xeacDb2aFD602457D034902f6930daaACd355B303",
+      "txHash": "0x3a4dcca68a80e87f818c07d6e5a419f8bf90c4ab81cf96db82313dce8ed95673",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "EthBank",
+            "src": "contracts/EthBank.sol:7"
+          },
+          {
+            "label": "_registered",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "EthBank",
+            "src": "contracts/EthBank.sol:8"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EthBank",
+            "src": "contracts/EthBank.sol:9"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
