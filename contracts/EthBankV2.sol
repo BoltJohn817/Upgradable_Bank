@@ -2,9 +2,8 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
-import "hardhat/console.sol";
 
-contract EthBank is Initializable {
+contract EthBankV2 is Initializable {
     mapping(address => uint256) private _balances;
     mapping(address => bool) _registered;
     address private _owner;
@@ -43,5 +42,16 @@ contract EthBank is Initializable {
 
     function getBalance() external view onlyRegisteredAccount returns(uint256) {
         return _balances[msg.sender];
+    }
+
+    function transfer(address to, uint256 amount) external onlyRegisteredAccount {
+        require(amount <= _balances[msg.sender], "Not enough ETH in the bank");
+        if(_registered[to]) {
+            _balances[to] += amount;
+            _balances[msg.sender] -= amount;
+        } else {
+            _balances[msg.sender] -= amount;
+            payable(to).transfer(amount);
+        }
     }
 }
